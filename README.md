@@ -10,5 +10,5 @@ Layout order rough draft:
 - Container
 - Database
 - Git Repo
-- New latest EE install
+- Craft CMS | craft.cccjoplin.com/admin
 - Static Resources
