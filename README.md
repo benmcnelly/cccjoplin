@@ -5,7 +5,7 @@ This project will contain the development branch, static templates, live site, B
 
 Layout order rough draft:
 
-- Amazon Route 53 DSN
+- Amazon Route 53 for DNS
 - Digital Ocean Droplet's
 - Container
 - Database
