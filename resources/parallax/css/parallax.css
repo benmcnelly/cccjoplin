@@ -1,0 +1,170 @@
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.pcontainer {
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+section.module p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+section.module.parallax-1 {
+  background-image: url("../img/back1.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../img/back2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/back3.jpg");
+}
+section.module.parallax-4 {
+  background-image: url("../img/back4.jpg");
+}
+/* Make it mobile friendly */
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.module.parallax {
+    height: 13em;
+  }
+  section.module.parallax h1 {
+    line-height: 200px;
+  }
+  .pcontainer {
+    max-width: 450px;
+  }
+  section.module h2 {
+    margin-bottom: 10px;
+  }
+  section.module p {
+   margin-bottom: 10px;
+  }
+  section.module.content {
+    padding: 10px 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  section.module.parallax {
+    height: 25em;
+  }
+  section.module.parallax h1 {
+    line-height: 350px;
+  }
+  .pcontainer {
+    max-width: 560px;
+  }
+  section.module h2 {
+    margin-bottom: 20px;
+  }
+  section.module p {
+   margin-bottom: 20px;
+  }
+  section.module.content {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.module.parallax {
+    height: 27em;
+  }
+  section.module.parallax h1 {
+    line-height: 375px;
+  }
+  .pcontainer {
+    max-width: 730px;
+  }
+  section.module h2 {
+    margin-bottom: 30px;
+  }
+  section.module p {
+   margin-bottom: 30px;
+  }
+  section.module.content {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.module.parallax {
+    height: 30em;
+  }
+  section.module.parallax h1 {
+    line-height: 400px;
+  }
+  .pcontainer {
+    max-width: 960px;
+  }
+  section.module h2 {
+    margin-bottom: 40px;
+  }
+  section.module p {
+   margin-bottom: 40px;
+  }
+  section.module.content {
+    padding: 40px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.module.parallax {
+    height: 30em;
+  }
+  section.module.parallax h1 {
+    line-height: 400px;
+  }
+  .pcontainer {
+    max-width: 960px;
+  }
+  section.module h2 {
+    margin-bottom: 40px;
+  }
+  section.module p {
+   margin-bottom: 40px;
+  }
+  section.module.content {
+    padding: 40px 0;
+  }
+}
