@@ -12,3 +12,16 @@ Layout order rough draft:
 - Git Repo
 - Craft CMS | craft.cccjoplin.com/admin
 - Static Resources
+
+Layout within webserver (without disclosing complete server paths):
+
+# Website Templates
+	/admin/expressionengine/templates/default_site/website.group/[dev.html]
+# CSS
+	/css
+# JS
+	/js
+# Fonts
+	/fonts
+# Images
+	/images/site

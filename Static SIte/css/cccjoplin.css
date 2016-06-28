@@ -1,21 +1,25 @@
+/* This file contains all custom CSS for the site,
+   in addition to overrides for the CSS provided by
+   Bootstrap. */
+
 html, body {
   margin:0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background: url(../images/D880FB2F44.jpg);
+  background: url(../images/site/D880FB2F44.jpg);
 }
 
 #topbar {
   height: 98px;
   width: 1920px;
-  background: url(../images/topheader_loop.png);
+  background: url(../images/site/topheader_loop.png);
 }
 
 #logo {
   width: 172px;
   height: 162px;
   margin: 0px 0px 0px 100px;
-  background: url(../images/header_logo.png);
+  background: url(../images/site/header_logo.png);
 }
 
 #nav {
