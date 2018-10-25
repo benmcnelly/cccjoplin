@@ -1,0 +1,498 @@
+/* To Do:
+> Check Page you are on then choose image */
+
+
+/* This file contains all custom CSS for the site,
+   in addition to overrides for the CSS provided by
+   Bootstrap. */
+
+   
+/* ===================
+   | Custom Site CSS |
+   =================== */
+   
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#topbar {
+  z-index: 5; /* bring the top bar forward, only works w/positioned elements */
+  width: 100%; /* original: 1920px */
+  background-color: white;
+  box-shadow: 0px 0px 10px #a6a6a6;
+  position: fixed;
+  top: 0;
+}
+
+#logo {
+  width: auto; /* orginal: 162px */
+  height: auto; /* original: 172px */
+  box-shadow: 0px 0px 10px #737373;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#cccnav {
+  font-family: 'Righteous', cursive;
+  text-align: right;
+  font-size: 125%
+}
+
+#cccnav > ul {
+  list-style-type: none;
+  padding: 0px 50px 0px 0px;
+  overflow: hidden;
+  background-color: none;
+  position: fixed;
+  width: 100%;
+}
+
+#cccnav > ul > li {
+  display: inline;
+}
+
+#cccnav > ul > li > a {
+  display: inline;
+  color: #333;
+  text-align: center;
+  padding: 15px 7px;
+  text-decoration: none;
+}
+
+#cccnav > ul > li > a:hover {
+  color: #FF5C33;
+}
+
+.lndimgspc {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.landinglead {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: white;
+}
+
+.circlebtn {
+	border-radius: 50%;
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+}
+
+.landingbtn {
+  display: inline-block;
+  height: auto;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+.landingbtn:hover {
+  background-color: white;
+}
+
+.pdtp-10 {
+  padding-top: 10px;
+}
+
+.pdbm-10 {
+  padding-bottom: 10px;
+}
+
+.pdbm-20 {
+  padding-bottom: 20px;
+}
+.pdbm-30 {
+  padding-bottom: 30px;
+}
+
+.black {
+  background: black;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.orange {
+  background: #FF3300;
+}
+
+.white {
+  background: white;
+}
+.gray {
+  background: #c8c8c8;
+}
+
+.center {
+  text-align: center;
+}
+
+.whitetext {
+  font-color: white;
+}
+
+.righteous {
+  font-family: 'Righteous', cursive;
+}
+
+.blackFont {
+  color: black;
+}
+
+.boxShadow {
+  box-shadow: 0px 0px 10px black;
+}
+
+/* ===============
+  | PARALLAX CSS |
+  ================ */
+
+/* Parallax: Primary Structure */
+.pcontainer {
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Lato', sans-serif;
+}
+/* Parallax: Sections */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h1, h2, h3, h4 {
+  font-family: 'Righteous', cursive;
+}
+section.module h1.whitetext, h2.whitetext, h3.whitetext, h4.whitetext {
+  color: white;
+}
+section.module p {
+  font-family: 'Lato', sans-serif;
+}
+section.module p.whitetext {
+  color: white;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-landing {
+  background-image: url("../images/site/back5.jpg"); /* Define landing background image */
+}
+section.module.parallax-1 {
+  background-image: url("../images/site/back1.jpg"); /* Define 1st background image */
+}
+section.module.parallax-2 {
+  background-image: url("../images/site/back2.jpg"); /* Define 2nd background image */
+}
+section.module.parallax-3 {
+  background-image: url("../images/site/back3.jpg"); /* Define 3rd background image */
+}
+section.module.parallax-4 {
+  background-image: url("../images/site/back4.jpg"); /* Define 4th background image */
+}
+section.module.parallax-marRet1 {
+  background-image: url("../images/site/back4.jpg"); /* Define marriage retreat background image */
+}
+
+/* Parallax: Mobile Assistance */
+@media screen and (max-width: 480px) {
+  section.module.parallax {
+    height: 13em;
+  }
+  section.module.parallax-landing {
+    height: 35em;
+  }
+  section.module.parallax h1 {
+    line-height: 200px;
+  }
+  .pcontainer {
+    max-width: 450px;
+  }
+  .lndimgspc {
+  margin-top: -30em;
+  margin-bottom: 25px;
+  height: 30em;
+  }
+  .landinglead {
+  font-size: 4em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .circlebtn {
+	width: 5em;
+	height: 5em; /* must be equal to width */
+  box-shadow: 0px 0px 5px #333;
+  padding-top: 1.6em;
+  margin-top: 10px;
+  font-size: 15px;
+  }
+  .carouselPad {
+    padding-top: 3.5em;
+  }
+  .landingbtn {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 481px) {
+  section.module.parallax {
+    height: 25em;
+  }
+  section.module.parallax-landing {
+    height: 32em;
+  }
+  .pcontainer {
+    max-width: 560px;
+  }
+  .lndimgspc {
+  margin-top: -27em;
+  margin-bottom: 25px;
+  height: 27em;
+  }
+  .landinglead {
+  font-size: 4em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .circlebtn {
+	width: 5em;
+	height: 5em; /* must be equal to width */
+  box-shadow: 0px 0px 5px #333;
+  padding-top: 1.6em;
+  margin-top: 10px;
+  font-size: 15px;
+  }
+  .landingbtn {
+    width: 300px;
+  }
+  .carouselPad {
+    margin-top: 3.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.module.parallax {
+    height: 27em;
+  }
+  section.module.parallax-landing {
+    height: 40em;
+  }
+  .pcontainer {
+    max-width: 730px;
+  }
+  #topbar {
+    height: 4em;
+  }
+  #logo {
+    max-width: 5em; /* adjust this number to change the image size */
+    margin: 0px 0px 0px 75px;
+  }
+  #cccnav {
+    margin: -60px 0px 0px 0px;
+  }
+  .lndimgspc {
+  margin-top: -32em;
+  margin-bottom: 25px;
+  height: 32em;
+  }
+  .landinglead {
+  font-size: 6em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .circlebtn {
+	width: 5em;
+	height: 5em; /* must be equal to width */
+  box-shadow: 0px 0px 5px #333;
+  padding-top: 1.7em;
+  margin-top: 10px;
+  font-size: 15px;
+  }
+  .carouselPad {
+    margin-top: 3.5em;
+  }
+  landingbtn {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section.module.parallax {
+    height: 30em;
+  }
+  section.module.parallax-landing {
+    height: 50em;
+  }
+  .pcontainer {
+    max-width: 960px;
+  }
+  #topbar {
+    height: 4em;
+  }  
+  #logo {
+    max-width: 6em; /* adjust this number to change the image size */
+    margin: 0px 0px 0px 95px;
+  }
+  #cccnav {
+    margin: -75px 0px 0px 0px;
+  }
+  .lndimgspc {
+  margin-top: -40em;
+  margin-bottom: 25px;
+  height: 40em;
+  }
+  .landinglead {
+  font-size: 8em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .circlebtn {
+	width: 5em;
+	height: 5em; /* must be equal to width */
+  box-shadow: 0px 0px 5px #333;
+  padding-top: 1.8em;
+  margin-top: 10px;
+  font-size: 20px;
+  }
+  .carouselPad {
+    margin-top: 3em;
+  }
+  .landingbtn {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.module.parallax {
+    height: 30em;
+  }
+  section.module.parallax-landing {
+    height: 60em;
+  }
+  .pcontainer {
+    max-width: 1170px;
+  }
+  #topbar {
+    height: 4em; /* was 85px 12/11/16 */
+  }
+  #logo {
+    max-width: 7em; /* adjust this number to change the image size; was 145px 12/11/16 */
+    margin: 0px 0px 0px 115px;
+  }
+  #cccnav {
+    margin: -90px 0px 0px 0px; /* was -125px 0px 0px 0px 12/11/16 */
+  }
+  .lndimgspc {
+  margin-top: -50em;
+  margin-bottom: 25px;
+  height: 50em;
+  }
+  .landinglead {
+  font-size: 10em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .8em;
+  }
+  .circlebtn {
+	width: 10em;
+	height: 10em; /* must be equal to width */
+  box-shadow: 0px 0px 5px #333;
+  padding-top: 4em;
+  margin-top: 10px;
+  font-size: 20px;
+  }
+  .carouselPad {
+    margin-top: 2em;
+  }
+  .landingbtn {
+    width: 360px;
+  }
+}
+
+/* =======================
+   | Bootstrap Overrides |
+   ======================= */
+
+/* Set Carousel images to full page width */
+.carousel img {
+    min-width: 100%;
+    height: auto;
+}
+
+/* change the highlight color of navbar elements to site theme */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #FF5C33;
+}
+
+/* change the color of the bars on the nav button */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+/* change the border colors of navbar */
+.navbar-default .navbar-toggle {
+  border-color: #333;
+}
+
+/* change navbar color, apply styles to match site CSS */
+.navbar-default {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 5px #a6a6a6;
+}
+
+/* change the brand text to match site */
+.navbar-default .navbar-brand {
+  font-family: 'Righteous', cursive;
+  color: #333;
+}
+
+/* change the brand text highlight color to match site */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FF5C33;
+  background-color: transparent;
+}
+
+/* change nav text color and type to match site*/
+.navbar-default .navbar-nav > li > a {
+  font-family: font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+/* change nav text highlight color to match site */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FF5C33;
+  background-color: transparent;
+}
+
+/* change the default link visual appearance to match site */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* change the default link visual behavior to match site */
+a:hover,
+a:focus {
+  color: #FF5C33;
+  text-decoration: none;
+}
+
+/* Remove pad on Bootstrap row element to make things on page line up correctly. */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}

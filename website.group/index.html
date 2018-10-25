@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Central Christian Center is committed to tell everyone about Jesus Christ and His great love for them. It's our desire to bring people into God's family and help them develop a Christ-like maturity as well as equipping them for ministry.">
+    <meta name="author" content="Central Christian Center">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="img_src" href="http://cccjoplin.com/images/site/ccc-soc-med-1.jpg">
+    
+    <meta property="og:title" content="Central Christian Center">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://cccjoplin.com">
+    <meta property="og:description" content="Come worship the King with us!">  
+    <meta property="og:image" content="http://cccjoplin.com/images/site/ccc-soc-med-1.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <title>Central Christian Center</title>
+    <link href="{path='website/bootstrap'}" rel="stylesheet">{!-- Bootstrap Core CSS --}
+    <link href="{path='website/cccjoplincssdev'}" rel="stylesheet">{!-- Custom CSS --}
+    <link href='https://fonts.googleapis.com/css?family=Righteous|Lato' rel='stylesheet' type='text/css'>{!-- Custom Fonts --}
+    
+		{!-- Shortcut Icons --}
+		<link rel="apple-touch-icon" sizes="180x180" href="http://cccjoplin.com/images/site/apple-touch-icon-180-precomposed.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://cccjoplin.com/images/site/apple-touch-icon-152-precomposed.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://cccjoplin.com/images/site/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://cccjoplin.com/images/site/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://cccjoplin.com/images/site/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon" href="http://cccjoplin.com/images/site/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" type="image/png" href="http://cccjoplin.com/images/site/favicon32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://cccjoplin.com/images/site/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    {!-- ========= |
+    | Giving Modal |
+    | ========== --}
+    <div class="modal fade" id="givingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">Online Giving</h3>
+          </div>
+          <div class="modal-body">
+          
+            
+            {!-- Paypal form --}
+            <form action="https://www.paypal.com/us/cgi-bin/webscr" method="post">
+              <fieldset>
+                <legend>
+                  <b>Give with PayPal</b>
+                </legend>
+                
+              <p>Welcome to our online giving page, providing you with a free and secure way to give. You can give with your paypal account, debit, 
+                or credit card. When entering the amount you plan to give, please enter the <strong>number in United States Dollars without symbols</strong> 
+                (i.e. 12.34 or 56.78, <strong>NOT</strong> $12.34 or $56.78) Thank you for your contribution to our ministry!</p>
+                
+              <input name="cmd" type="hidden" value="_xclick" />
+              <input name="business" type="hidden" value="donations@centralchristiancenter.org" />
+              <input name="currency_code" type="hidden" value="USD" />
+              <input name="item_name" type="hidden" value="Donation" />
+              <label class="wTwenty">Amount</label>
+              <input name="amount" type="text"><br style="clear: left;">
+              <label class="wTwenty">Type</label>
+              <input name="on2" type="hidden" value="Giving to">
+                <select name="os2">
+                  <option value="Tithing">Tithing</option>
+                  <option value="TV Ministry">TV Ministry</option>
+                  <option value="Offering">Offering</option>
+                  <option value="Donation">Donation</option>
+                  <option value="Special">Special</option>
+                </select><br style="clear: left">
+              <label class="wTwenty">Notes</label>
+              <input maxlength="200" name="on1" type="hidden" value="Notes">
+              <input name="os1" type="text"><br style="clear: left">
+              <button class="btn btn-success pull-right" name="submit"><b>Submit via PayPal</b></button>
+              </fieldset>
+            </form>
+            
+            {!-- ShelbyNext Online, Google Play, Apple App Store Links --}
+            <form action="#" method="post">
+              <fieldset>
+                <legend>
+                  <b>Give Using ShelbyNext</b>
+                </legend>
+                <p>Use the ShelbyNext Web Portal:
+                <a href="https://www.shelbygiving.com/dl/?uid=cent410224" target="_blank" alt="ShelbyNext payment" 
+                  title="This will take you to ShelbyNext in a new tab." role="button"
+                  class="btn btn-success pull-right"><b>Pay Using ShelbyNext</b></a></p>
+                <p>Prefer to use the app? You can find it on <a
+                  href="https://play.google.com/store/apps/details?id=com.ministrybrands.shelbynext&hl=en" target="_blank" style="color: blue;"
+                  alt="ShelbyNext Android App" title="This will open a link to the ShelbyNext Android App in a new tab or appropriate application.">
+                  Google Play</a> or the <a href="https://itunes.apple.com/us/app/shelbynext-membership/id996581065?mt=8" style="color: blue;"
+                  target="_blank" alt="ShelbyNext Apple App Store App" title="This will open a link to the ShelbyNext Apple App in a new tab or appropriate application.">
+                  Apple App Store</a>.</p>
+                <p>You can also give via text message:
+                <a href="tel:4177377271" alt="text the amount you wish to give to 4177377271" role="button" class="btn btn-success pull-right"><b>Text 4177377271</b></a></p>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>{!-- /.modal-content --}
+      </div>{!-- /.modal-dialog --}
+    </div>{!-- /.modal --}
+    
+    {!-- Feature Not Available Modal --}
+    <div class="modal fade" id="notYet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">This Feature Isn't Ready Yet</h3>
+          </div>
+          <div class="modal-body">
+            <p>We're working to bring all planned pages, features, bells, whistles, kazoos, cats, tubes, loldogs, and the like
+              into line and configuration, but there are only so many hours available to work this project. It will
+              all eventually fall into line, but until then, please explore the other features of our site. God Bless.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {!-- Pretty Header --}
+    <div id="topbar" class="hidden-xs">
+      <a href="http://www.cccjoplin.com"><img id="logo" src="images/site/header_logo.jpg"></a>
+      <div id="cccnav">
+        {!-- Navigation --}
+        <ul>
+          {!--<li><a href="#" data-toggle="modal" data-target="#notYet">Be A Part!</a></li>--}
+          <li><a href="#top">Top</a></li>
+          <li><a href="#ministries">Ministries</a></li>
+          <li><a href="#cellgroups">Life Groups</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          {!--<li><a href="#" data-toggle="modal" data-target="#notYet">Events</a></li>--}
+          <li><a href="#" data-toggle="modal" data-target="#givingModal">Giving</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    {!-- Bootstrap Header for mobile --}
+    <nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-md hidden-lg">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.cccjoplin.com"><img src="images/site/header_logo.jpg" style="max-width: 45px; margin-top: -15px;"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          {!--<li><a href="#" data-toggle="modal" data-target="#notYet">Be A Part!</a></li>--}
+          <li><a href="#top">Top</a></li>
+          <li><a href="#ministries">Ministries</a></li>
+          <li><a href="#cellgroups">Life Groups</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          {!--<li><a href="#" data-toggle="modal" data-target="#notYet">Events</a></li>--}
+          <li><a href="#" data-toggle="modal" data-target="#givingModal" >Giving</a></li>
+          </ul>
+        </div>{!--/.nav-collapse --}
+      </div>
+    </nav>
+		
+    <section class="module parallax parallax-landing">{!-- Parallax Landing Image --}
+      <div id="top" class="lndimgspc">
+        <img src="http://www.cccjoplin.com/images/site/Logo-no-text.png" class="landingLogo">
+      </div>
+      <div class="row">
+        <div class="container mart10">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 center">
+            {exp:channel:entries channel="sermon" limit="1"}
+              <a class="landingbtn" href="{youtube_link}" alt="View Our Latest Sermon on Youtube" target="_blank"><h3 class="mar0">View Latest Sermon</h3></a>
+				    {/exp:channel:entries} 
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 center">
+            {exp:channel:entries channel="sermon" limit="1"}
+              <a class="landingbtn" href="{audio_url}" alt="View Our Latest Sermon on Youtube" target="_blank" download><h3 class="mar0">Listen to Latest Sermon</h3></a>
+				    {/exp:channel:entries} 
+          </div>
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 center">
+            <a class="landingbtn" href="#" data-toggle="modal" data-target="#givingModal"><h3 class="mar0">Support The Church</h3></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="module content">{!-- Parallax Content Section 1 --}
+    {!--
+      == Plans for this section ==
+      This will be a general welcome section, with one-stop features planned post launch.
+    --}
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 orange">
+            <h1 class="leadTextW center">Welcome to Central Christian Center!</h1>
+          </div>
+        </div>
+        <div class="row pdbm-10">
+          <div class="col-lg-6 col-sm-12 white">{!-- Faith Statement --}
+            <h2 class="hdr1TextO">In the Heart of Joplin, With a Heart for Joplin</h2>
+            {exp:channel:entries channel="welcome_message"}
+            <p class="pageTextOrange">{welcome_content}</p>
+            {/exp:channel:entries}
+          </div>
+          <div class="col-lg-6 col-sm-12 white">{!-- A Note From the Pastor --}
+            <h2 class="hdr1TextO">The Thought For the Day</h2>
+            {exp:channel:entries channel="p_motd" limit="1"}
+						<p class="pageTextOrange">{motd_content}</p>
+            {/exp:channel:entries}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 orange pdbm-30">{!-- Upcoming Events Section --}
+            <h2 class="hdr1TextW center">Upcoming Events</h2>
+          </div>
+        </div>
+        <div class="row orange pdbm-10">
+            {exp:channel:entries  channel="current_events" orderby="expiration_date" sort="asc"}
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="cebox">
+                  <h3 class="hdr2TextW center">{title}</h2>
+                  <h4 class="pageTextWhite center">{short_description}</h4>
+                </div>  
+              </div>
+            {/exp:channel:entries}
+          </div>
+    </section>
+    
+    <section class="module parallax parallax-1">{!-- Parallax Image 1 --}
+      <div class="tweendiv">
+        <h1 id="ministries" class="tweentext">Outreach Ministries</h1>
+      </div>
+    </section>
+    
+    <section class="module content">{!-- Parallax Content Section 2 --}
+    {!--
+      == PLANS FOR THIS SECTION ==
+      Move to a 50/50 split with an image for each ministry. As content evolves .... or shows up, being honest...
+      links out to individual pages can be established. For the time being, this section will use a 25/25/25/25
+      button layout. This works at large resolution, but the CSS for the individual 'buttons' still needs adjusted
+      so that it scales properly as sizes decrease. That bit has been put on hold for the moment. This section really
+      does eventually need more lead content.
+    --}
+      {!-- HEADING AREA --}
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 orange">
+          <h1 class="hdr2TextW center">With deep ties to the community, Central Christian Center supports a number of outreach ministries.</h1>
+          <p class="pageTextWhite center">Click or tap on a title below to learn more.<br><br></p>
+        </div>
+      </div>
+      
+      {!-- PANEL AREA --}
+      <div class="row pdtp-10">
+        <div class="col-xs-12">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            {!-- WOVEN --}
+            <div class="panel panel-default">
+                <div class="minBtn" role="tab" id="headingOne">
+                    <h4 class="panel-title center">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            <span class="accTxt">Woven</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <p class="pageTextOrange">
+                        At the end of 2013, the Holy Spirit stirred the hearts of the women of Central Christian Center to unite the five women's groups. They aligned their hearts and vision, to create one group that encompasses all women. On a foundation of prayer and united, Woven was born! Colossians 2:2 says, <em>“I want them to be encouraged and knit (WOVEN) together by strong ties of love. I want them to have complete confidence that they understand God’s mysterious plan, which is Christ himself.”</em> We want YOU to be encouraged and WOVEN WITH US and TOGETHER we will come to understand GOD’s plan. So please join with us and other women of faith and let’s weave a great tapestry of love for our church and community. 
+                      </p>
+                      <div class="center hidden-xs">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSZtfuFGnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            {!-- SATURDAY NIGHT LIVE --}
+            <div class="panel panel-default">
+                <div class="minBtn" role="tab" id="headingTwo">
+                    <h4 class="panel-title center">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            <span class="accTxt">Saturday Night Live</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <p class="pageTextOrange">
+                        <strong>Break free from the bondage that holds you!</strong><br>
+                        <br>
+                        Our passion and mission at Saturday Night Live is seeing lives transformed by helping people find a personal relationship with Jesus Christ and freedom through Christ by examples of Love and Acceptance.<br>
+                        <br>
+                        7:00pm every Saturday night<br>
+                        423 Main Street (alley entrance) Joplin, Missouri 64801<br>
+                        Downstairs Fellowship Hall<br>
+                        <br>
+                        Loneliness, Hopelessness, Drugs, Alcohol, Pornography<br>
+                        Are you, or someone you know struggling with an addiction? Are you in an abusive relationship?<br>
+                        Have you had, or are you currently going through a divorce? Are You Miserable?
+                      </p>
+                      <ul>
+                        <li class="pageTextOrange">Discover the secrets to happiness and success - Guaranteed!</li>
+                        <li class="pageTextOrange">Fellowship with those who 'know how you feel'!</li>
+                        <li class="pageTextOrange">Live a purpose-driven life, free from burdens of suffering and misery!</li>
+                        <li class="pageTextOrange">Learn how to 'Let Go, and Let God!'</li>
+                      </ul>
+                      <p class="pageTextOrange">
+                        <em>I came from institutions and prisons to total freedom! I couldn't, but Jesus could!</em> - Jimmy<br>
+                        <br>
+                        <em>I was lost in addiction. I was incarcerated for 7 years. I hated who I was and didn't care about anyone. I got saved at a Saturday Night Live meeting. I have a huge, loving family at SNL. I love myself and others.</em> - Steve<br>
+                        <br>
+                        <em>After 27 years of addiction, I found myself spiritually bankrupt - feeling empty and defeated. Cheating, stealing, manipulation, and adultery were familiar to me. If you are looking for an answer, God IS the answer. What God has done for me, He'll do for you.</em> - Anthony<br>
+                        <br>
+                        <em>I was lost in drugs and alcohol for 33 years because I was living in denial. I was making bad choices. Since getting saved I am growing and learning to accept myself for who I am. I am living a much simpler life. I have a great family at SNL and hope to help others who have struggled with addiction.</em> - Renee<br>
+                        <br>
+                        <em>I used drugs for more than 20 years. During the time of my drug use I hurt my family and friends; but through the love of Jesus Christ I stopped using drugs and hurting people. God gave me a second chance and He can give the same to you.</em> - Troy<br>
+                        <br>
+                        <em>We lived in chaos - counted out by the world - cast out by our families. We both used drugs and had no stability. April's children had to raise themselves because she was incapable while under the influence. Tim was a homeless meth addict for over 15 years and was put in jail over 50 times. We have both been clean since July of 2009 with no desire to use. We were married in December 2009. God has healed our relationships and given us a family at Saturday Night Live. We finally have stability.</em> - Tim & April<br>
+                        <br>
+                        <em>We both started abusing drugs at the age of 12. We used and cooked meth together. Our daily routine was lying, cheating, and stealing. We had a love/hate relationship. We divorced. Years later Marianne, married to another man and clean for 3 years, was dying of Hep C. Marianne's husband left her while she was in the hospital and I stepped in and took care of her. I stopped using drugs that very day. God DID restore our family! We've been married for 3 years, have great jobs, and stability. We have more than we could ever imagine.</em> - Ricardo and Marianne<br>
+                      </p>
+                    </div>
+                </div>
+            </div>
+            {!-- BRIGHT FUTURES --}
+            <div class="panel panel-default">
+                <div class="minBtn" role="tab" id="headingThree">
+                    <h4 class="panel-title center">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            <span class="accTxt">Bright Futures</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <p class="pageTextOrange">
+                        Central Christian Center has been a bright futures partner for eight years, and our partnership has grown in that time period. When Central first joined, our partner was Duquesne Elementary, providing us the opportunity to serve around 200 students. When the tornado hit Joplin and it's surrounding communities, Duquesne and Duenweg schools were merged into a single building, and Central began to serve around 310 students. When the new Soaring Heights Elementary school building opened, our service opportunities expanded to 365 students, and now to 435 students.<br>
+                        <br>
+                        Bright Futures is an amazing and awesome program that allows the faith-based community into our schools, providing us a way to show the Love of Jesus to the students and teachers with whom we interact. During the course of our involvement we have seen this program's reception evolve from skepticism to trust. With our choice to be actively involved in the schools, we have seized many opportunities to show that we love and care about our schools, teachers, and students, yielding many rewards that escape expression.<br>
+                        <br>
+                        <strong>How We Have Helped Make a Difference:</strong>
+                      </p>
+                      <ul>
+                        <li class="pageTextOrange">While students were working hard on their MAPP tests, we provided snacks and encouragement to each student. We also brought extra pencils.</li>
+                        <li class="pageTextOrange">We brought snacks and the occasional lunch to teachers and staff on various days throughout the year (like parent-teacher conferences).</li>
+                        <li class="pageTextOrange">We gave small gifts for teachers and staff on holidays as a token of appreciation for all they do to educate area kids.</li>
+                        <li class="pageTextOrange">We spent time with the kids reading one-on-one on Dr. Seuss Days.</li>
+                        <li class="pageTextOrange">We have hosted hat, sock, and glove drives for the kids.</li>
+                        <li class="pageTextOrange">We provided hygiene products for the kids to help with their hygiene education.</li>
+                        <li class="pageTextOrange">We participated in fundraising by volunteering at the events and by financially assisting the events.</li>
+                        <li class="pageTextOrange">We brought pizza for 'Student of the Month' days.</li>
+                        <li class="pageTextOrange">We helped pay for the T-shirts with the Soaring Heights and CCC logo, along with other Bright Futures partners.</li>
+                        <li class="pageTextOrange">We provided and gave out wristbands with Soaring Heights and Central Christian Center embossed with school colors to all of the students to encourage them and welcome them to their new school.</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            {!-- FOOD PANTRY --}
+            <div class="panel panel-default">
+                <div class="minBtn" role="tab" id="headingFour">
+                    <h4 class="panel-title center">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            <span class="accTxt">Food Pantry</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <p class="pageTextOrange">
+                        <strong>We need your help with our Food Pantry!<br>
+                        <br>
+                        Suggested Items:</strong>
+                      </p>
+                      <ul>
+                        <li class="pageTextOrange">Canned Meats - Tuna, Chicken, Spam, Potted Meat, etc</li>
+                        <li class="pageTextOrange">Box Dinners - Tuna Helper, etc</li>
+                        <li class="pageTextOrange">Canned or boxed Fruit Juices</li>
+                        <li class="pageTextOrange">Macaroni and Cheese</li>
+                        <li class="pageTextOrange">Peanut Butter</li>
+                        <li class="pageTextOrange">Canned Soups</li>
+                        <li class="pageTextOrange">Saltine Crackers, etc</li>
+                        <li class="pageTextOrange">Canned Unsweetened Milk</li>
+                        <li class="pageTextOrange">Dried Potato Flakes, Scalloped Potatoes, etc</li>
+                        <li class="pageTextOrange">Dry Cereal</li>
+                        <li class="pageTextOrange">Oatmeal</li>
+                        <li class="pageTextOrange">Canned Vegetable Juices</li>
+                        <li class="pageTextOrange">Regular Tea Bags</li>
+                        <li class="pageTextOrange">Dried Rice, Beans, Pasta</li>
+                        <li class="pageTextOrange">Tomato Sauce - Canned</li>
+                        <li class="pageTextOrange">Jello - dry, boxed</li>
+                        <li class="pageTextOrange">Canned Fruits - peaches, applesauce, etc</li>
+                        <li class="pageTextOrange">Small Containers of Coffee, Cocoa Mix</li>
+                        <li class="pageTextOrange">Pancake Mix</li>
+                        <li class="pageTextOrange">Cereal Bars</li>
+                        <li class="pageTextOrange">Pasta</li>
+                        <li class="pageTextOrange">Powdered Milk</li>
+                      </ul>
+                      <p class="pageTextOrange">
+                        <strong>We Need Protien and Sauces!</strong><br>
+                        <br>
+                        Canned meats, beans, and whatever other non-perishable food items you can think of - we need them!<br>
+                        <br>
+                        Please place your donations in the blue barrels on Sundays or drop by the Church Office between the hours of 8:00 am to 4:30 pm weekdays. Thank you for your help in this ministry!<br>
+                        <br>
+                        <strong>Are you in need of assistance? Call the church office at the number below to find out how we can help.</strong>
+                      </p>
+                    </div>
+                </div>
+            </div>
+
+          </div>{!-- panel-group --}
+        </div>
+      </div>
+    </section>
+    
+    <section class="module parallax parallax-2">{!-- Parallax Image 2 --}
+      <div class="tweendiv">
+        <h1 id="cellgroups" class="tweentext">Life Groups</h1>
+      </div>
+    </section>
+    
+    <section id="cell" class="module content">{!-- Parallax Content Section 3 --}
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="pageTextOrange"><strong>Group Ministries:</strong>
+            <br>
+            <em>a place where people can come together to connect 
+            with others.</em>
+            <br>
+            <br>
+            The best way to grow as a Christian is to get into a 
+            situation where you can rub shoulders with other Christians 
+            and benefit from life-on-life modeling and mentoring from 
+            those who've learned what it means to live out their faith 
+            on a day-to-day basis. As relationships can't be forced, 
+            neither can spiritual growth. Life Groups provide an 
+            environment conducive to deeper spiritual relationships 
+            among group members. After that, it's up to the Holy 
+            Spirit to do His stuff according to a timetable that fits 
+            His plan (or in the case of some of us, at the pace at 
+            which we're willing to be led.)
+            <br>
+          </p>
+          <ul>
+            <li class="pageTextOrange"><strong>Life Groups are not in-depth Bible 
+              Studies.</strong>
+              <br>
+              Life Groups are about sharing life together 
+              and discovering how the love of God transforms 
+              hearts. In Life Groups, instead of talking about 
+              life, people engage in it.
+            </li>
+            <li class="pageTextOrange"><strong>Life Groups are built around 'affinity 
+              relationships'.</strong>
+              <br>
+              Affinity means that people in the Life Group have 
+              something basic in common. While it's true that 
+              close friends often have a stronger set of shared 
+              interests, values, or experiences that binds them 
+              together; that's why we tell people to choose a 
+              group primarily according to who else is in it 
+              rather than where it meets.
+            </li>
+            <li class="pageTextOrange"><strong>Life Groups are incubators of faith. 
+              </strong>
+              <br>
+              Incubators are warm, safe environments where 
+              premature babies are nourished into a sustainable 
+              life. That's what happens in Life Groups.
+            </li>
+            <li class="pageTextOrange"><strong>Life Groups are ideal for new Christians 
+              and the 'unchurched'.</strong>
+              <br>
+              Everyone benefits from a small group, but no 
+              one more than new believers or nonbelievers, 
+              because they so desperately need to share life 
+              with other Christians who have gone before 
+              them in their life struggles.
+            </li>
+          </ul>
+          <p class="pageTextOrange">
+            We all have a basic need to connect with others. Life Groups 
+            share lives together - the good times, the tough times, 
+            and the times in-between. The goal of Life Groups is simply 
+            to connect people to the two things they will need most when 
+            faced with the challenges of life: the Bible and other 
+            Christians.
+          </p>
+          <p class="pageTextOrange"><strong>The mission of Life Groups is:</strong></p>
+            <ul>
+              <li class="pageTextOrange">transforming believers into the image of Christ,</li>
+              <li class="pageTextOrange">Equipping them for the work of ministry,</li>
+              <li class="pageTextOrange">Strengthening them through teaching and fellowship,</li>
+              <li class="pageTextOrange">Renewing them through worship and prayer.</li>
+            </ul>
+          <p class="pageTextOrange"><strong>Life Groups are the solution to disconnection.</strong></p>
+            <ul>
+              <li class="pageTextOrange">Life Groups provide fellowship</li>
+              <li class="pageTextOrange">Life Groups share life together</li>
+              <li class="pageTextOrange">Life Groups change lives</li>
+            </ul>
+          <p class="pageTextOrange">
+            The beauty of this laid-back approach of Life Groups is that it 
+            'takes the pressure off'. Life Groups provide an environment where 
+            people are connected closely enough and long enough for life to 
+            happen and for God to show up. It's organic and simple; it works, 
+            and it works well.<br>
+            <br>
+            <strong>Life Groups are not a new thing.</strong>
+            <br>
+            In the 1st century church, as well as worshiping together in 
+            the Temples each day, Christians met in homes where they studied 
+            the apostles' teachings, shared meals together, and celebrated 
+            the Lord's Supper. "And each day the Lord added to their 
+            fellowship those who were being saved." - Acts 2:46-47 (NLT)<br>
+            <br>
+            Small group bands and classes started by John and Charles Wesley 
+            in the 18th century also attracted thousands of spiritually 
+            hungry people and grew many of them into mature believers. Anytime 
+            a group of friends commits to gather together to share their lives, 
+            pray, and discuss the Bible and the application of it's scriptures, 
+            good stuff is bound to happen.
+            <br>
+            <br>
+            <strong>Why Life Groups?</strong>
+            <br>
+            Life Groups are all about friends, encouragement, prayer, and the study 
+            of God's Word! In a Life Group, you can take a break from the busy 
+            demands of everyday life and invest in what is really important: 
+            your relationship with God and with the people around 
+            you. Most life groups meet for an hour and half every week. In a 
+            small group of people things happen that don't happen in bigger 
+            groups. The Bible gives us many examples of how lives were changed 
+            when people met together this way. The same thing happens as we 
+            hear of how Life Groups have provided friendship, support, 
+            encouragement, and opportunity for a closer relationship with Christ. 
+            Get connected in a life group and watch your life change!
+          </p>
+				</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel-group" id="accordionOne" role="tablist" aria-multiselectable="true">
+            {!-- Life Group Listing --}
+            <div class="panel panel-default">
+                <div class="minBtn" role="tab" id="headingFive">
+                    <h4 class="panel-title center">
+                        <a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            <span class="accTxt">Life Group Listing</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body">
+                      {exp:channel:entries  channel="cell_group"}
+                        <div class="cgbox">
+                          <a href="{comment_url_title_auto_path}">
+                          {if cell_group_photo}{!--{exp:imgsizer:size image="{cell_group_photo}" width="auto" height="300"
+                            }--}<img src="http://new.cccjoplin.com/images/lgph.jpg" width="auto" height="265" class="{switch='pull-left|pull-right'} mar-5">
+                          {if:else}<img src="http://new.cccjoplin.com/images/lgph.jpg" width="auto" height="265" class="{switch='pull-left|pull-right'} mar-5">
+                          {/if}</a>
+                          <h2 class="hdr1TextO center">{cell_group_name}</h2>
+                          <h3 class="hdr3TextO center">{cell_meeting_day} at {cell_meeting_time}</h3>
+                          <h4 class="hdr4TextO center">{cell_phone}</h4>
+                          <h4 class="pageTextOrange">{cell_desc}</h4>
+                        </div>  
+                      {/exp:channel:entries}
+                    </div>
+                </div>
+            </div>
+
+          </div><!-- panel-group -->
+        </div>
+      </div>
+    </section>
+    
+    <section class="module parallax parallax-3">{!-- Parallax Image 3 --}
+      <div class="tweendiv">
+        <h1 id="sermons" class="tweentext">Media Ministries</h1>
+      </div>
+    </section>
+
+    <section id="sermon" class="module content clearfix">{!-- Parallax Content Section 3 --}
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pdbm-10">{!-- Lastest Sermon Video --}
+            <h2 class="hdr1TextO center">View Our Latest Sermon</h2>
+            <div class="center hidden-xs">
+            {exp:channel:entries channel="sermon" limit="1"}
+              {youtube_embed}
+				    {/exp:channel:entries} 
+            </div>
+          </div>
+      </div>
+      <div class="row hidden-xs">
+        {exp:channel:entries channel="sermon" offset="1" limit="4"}
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 sermBtn">
+          <h3 class="hdr3TextW">
+            {title}
+          </h3>
+          <a class="sermBtnInner" href="{youtube_link}" target="_blank" alt="View {title} on YouTube.">Video</a>
+          <a class="sermBtnInner" href="{audio_url}" alt="Download the audio for {title}" download>Audio</a>
+        </div>
+        {/exp:channel:entries}
+      </div>
+      <div class="row visible-xs hidden-sm hidden-md hidden-lg">
+        {exp:channel:entries channel="sermon" limit="5"}
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 sermBtn">
+          <h3 class="hdr2TextW">
+            {title}
+          </h3>
+          <a class="sermBtnInner" href="{youtube_link}" target="_blank" alt="View {title} on YouTube."><span class="accTxt">Video</span></a>
+          <a class="sermBtnInner" href="{audio_url}" alt="Download the audio for {title}" download><span class="accTxt">Audio</span></a>
+        </div>
+        {/exp:channel:entries}
+      </div>
+    </section>    
+    
+
+    <section class="module content">{!-- Parallax Content Footer Section --}
+    
+        {!-- Footer --}
+        <div class="row pdbm-10">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 cent-el">
+            <h3 class="center">Service Times</h3>
+            <p class="center">10:30 am & 6:00 pm Sundays</p>
+            <p class="center">Nursery, Children's, Pre-Teen's, and Youth ministries available.</p>
+            <hr class="hidden-lg hidden-md">
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 cent-el">{!-- It would be pretty awesome if we had simple click-through images instead of full text for these --}
+            <h3 class="center">Around The Web</h3>
+            <p class="center"><a href="https://www.facebook.com/cccjoplin/" target="_blank">Facebook</a></p>
+            <p class="center"><a href="https://twitter.com/cccjoplin" target="_blank">Twitter</a></p>
+            <p class="center"><a href="https://www.youtube.com/channel/UC-UrTupgoq7zqjj3ffeqOEw" target="_blank">YouTube</a></p>
+            {!--<p><a>SoundCloud</a></p>--}
+            <hr class="hidden-lg hidden-md">
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 cent-el">
+            <h3 class="center">Central Christian Center</h3>
+            <p class="center"><a href="tel:4177815982">(417) 781-5982</a>
+              <br>
+              410 South Virginia Avenue
+              <br>
+              Joplin, MO 64801
+            </p>
+          </div>
+        </div>
+        
+        <div class="row gray pdtp-10 pdbtm-10">
+          <div class="col-lg-12 gray cent-el">
+            <p class="center">Copyright &copy; Central Christian Center 2018
+              <br>
+              This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
+                rel="dct:type">work</span> is licensed under the <a rel="license" 
+                href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons Attribution 3.0 United States 
+                License.</a>
+            </p>
+          </div>
+        </div>
+		</section>
+    
+    {!-- jQuery (at least version 1.9.x and less than version 3.x) --}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    {!-- Bootstrap Core JavaScript --}
+    <script src="js/bootstrap.min.js"></script>
+
+    {!-- Custom Theme JavaScript --}
+    <script src="{path='website/cccjoplinjs'}" type="text/javascript"></script>
+  </body>
+</html>

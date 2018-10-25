@@ -1,0 +1,29 @@
+{!-- Modal --}
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title bdtxt" id="myModalLabel">Contact Us</h3>
+      </div>
+      <div class="modal-body">
+				{exp:channel:entries channel="staff" dynamic="no" limit="100" orderby="title"}
+					{if staff_active == "active"}
+					<p class="bdtxt">{title}
+						{if staff_title}
+							- {staff_title}
+						{/if}
+						<span class="pull-right">
+						<a class="btn btn-success bdtxt" href="mailto:{staff_email}">Email</a>
+						</span>
+					</p>
+					<br>
+					{/if}
+				{/exp:channel:entries}{!-- Phone and social media removed because they were no longer necessary - Matt 3/20/2016 --}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link" data-dismiss="modal"><h4 class="bdtxt">Close</h4></button>
+      </div>
+    </div>{!-- /.modal-content --}
+  </div>{!-- /.modal-dialog --}
+</div>{!-- /.modal --}

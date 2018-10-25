@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+      <title>Central Christian Center</title>
+      <link href="../css/bootstrap.css" rel="stylesheet">{!-- Bootstrap Core CSS --}
+      <link href="../css/cccjoplin.css" rel="stylesheet">{!-- Custom CSS --}
+      <link href='https://fonts.googleapis.com/css?family=Righteous|Lato' rel='stylesheet' type='text/css'>{!-- Custom Fonts --}
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  <body>
+  
+    {!-- Giving Modal --}
+    <div class="modal fade" id="givingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">Online Giving</h3>
+          </div>
+          <div class="modal-body">
+            <p>Welcome to our online giving page, providing you with a free and secure way to give. You can give with your paypal account, debit, 
+              or credit card. Thank you for your contribution to our ministry!</p>
+            <form class="formLayout" action="https://www.paypal.com/us/cgi-bin/webscr" method="post">
+              <input name="cmd" type="hidden" value="_xclick" />
+              <input name="business" type="hidden" value="donations@centralchristiancenter.org" />
+              <input name="currency_code" type="hidden" value="USD" />
+              <input name="item_name" type="hidden" value="Donation" />
+              <label>Amount</label>
+              <input name="amount" type="text"><br style="clear: left;">
+              <label>Type</label>
+              <input name="on2" type="hidden" value="Giving to">
+                <select name="os2">
+                  <option value="Tithing">Tithing</option>
+                  <option value="TV Ministry">TV Ministry</option>
+                  <option value="Offering">Offering</option>
+                  <option value="Donation">Donation</option>
+                  <option value="Special">Special</option>
+                </select><br style="clear: left">
+              <label>Notes</label>
+              <input maxlength="200" name="on1" type="hidden" value="Notes">
+              <input name="os1" type="text"><br style="clear: left">
+              <button class="btn btn-success" name="submit">Submit via PayPal</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>{!-- /.modal-content --}
+      </div>{!-- /.modal-dialog --}
+    </div>{!-- /.modal --}
+    
+    {!-- Feature Not Available Modal --}
+    <div class="modal fade" id="notYet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">This Feature Isn't Ready Yet</h3>
+          </div>
+          <div class="modal-body">
+            <p>We're working to bring all planned pages, features, bells, whistles, kazoos, cats, tubes, loldogs, and the like
+              into line and configuration, but there are only so many hours available to work this project. It will
+              all eventually fall into line, but until then, please explore the other features of our site. God Bless.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {!-- Building Map Modal --}
+    <div class="modal fade" id="buildingMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">Welcome to Our Building</h3>
+          </div>
+          <div class="modal-body">
+            <img src="/images/site/map1-lower.jpg" width="100%" height="auto" >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {!-- Faith Statement Modal --}
+    <div class="modal fade" id="faithStatement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            {exp:channel:entries channel="welcome_message"}
+            <h3 class="modal-title" id="myModalLabel">{welcome_headline}</h3>
+          </div>
+          <div class="modal-body">
+            <p>{welcome_content}</p>
+            {/exp:channel:entries}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {!-- Word From Our Pastor Modal --}
+    <div class="modal fade" id="pmotd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">A word from Pastor Hank</h3>
+          </div>
+          <div class="modal-body">
+            {exp:channel:entries channel="p_motd" limit="1"}
+						<p>{motd_content}</p>
+            {/exp:channel:entries}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {!-- Pretty Header --}
+    <div id="topbar" class="hidden-xs">
+      <a href="http://www.cccjoplin.com"><img id="logo" src="images/site/header_logo.jpg"></a>
+      <div id="cccnav">
+        {!-- Navigation --}
+        <ul>
+          <li><a href="#" data-toggle="modal" data-target="#notYet">Be A Part!</a></li>      
+          <li><a href="http://cccjoplin.com/ministries">Ministries</a></li>
+          <li><a href="http://cccjoplin.com/sermons">Sermons</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#notYet">Events</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#givingModal">Giving</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    {!-- Bootstrap Header for mobile --}
+    <nav class="navbar navbar-default navbar-fixed-top hidden-sm hidden-md hidden-lg">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.cccjoplin.com"><img src="images/site/header_logo.jpg" style="max-width: 45px; margin-top: -15px;"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          <li><a href="#" data-toggle="modal" data-target="#notYet">Be A Part!</a></li>      
+          <li><a href="http://cccjoplin.com/ministries">Ministries</a></li>
+          <li><a href="http://cccjoplin.com/sermons">Sermons</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#notYet">Events</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#givingModal" >Giving</a></li>
+          </ul>
+        </div>{!--/.nav-collapse --}
+      </div>
+    </nav>
+		
+	<section class="module parallax parallax-marRet1"></section>
+    <section class="module content">{!-- Parallax Content Section 1 --}
+        <!-- Content within the white space -->
+
+        
+        {!-- Carousel --}
+
+
+        
+        <div class="row orange pdbm-30">
+          <div class="col-lg-12">
+            <h2 class="center whitetext">Hello! Are You New Here?</h2>
+            <p class="center whitetext">Let us show you around!<br>&nbsp;</p>
+          </div>
+          <div class="container container-fluid">{!-- This pushes the buttons closer together --}
+            <div class="col-md-4 center">
+              <a href="#" data-toggle="modal" data-target="#buildingMap"><img class="landingbtn" src="images/site/bmbtn.jpg"></a>
+            </div>
+            <div class="col-md-4 center">
+              <a href="#" data-toggle="modal" data-target="#faithStatement"><img class="landingbtn" src="images/site/fsbtn.jpg"></a>
+            </div>
+            <div class="col-md-4 center">
+              <a href="#" data-toggle="modal" data-target="#pmotd"><img class="landingbtn" src="images/site/pwbtn.jpg"></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row pdbm-10">
+          <div class="col-md-4 col-sm-12">
+            <h3 class="center">Service Times</h3>
+            <p class="center">10:30am & 6pm Sundays</p>
+            <p class="center">Nursery, Children's, Pre-Teen's, and Youth ministries available.</p>
+            <hr class="hidden-lg hidden-md">
+          </div>
+          <div class="col-md-4 col-sm-12"><!-- It would be pretty awesome if we had simple click-through images instead of full text for these -->
+            <h3 class="center">Around The Web</h3>
+            <p class="center"><a href="https://www.facebook.com/cccjoplin/" target="_blank">Facebook</a></p>
+            <p class="center"><a href="https://twitter.com/cccjoplin" target="_blank">Twitter</a></p>
+            <p class="center"><a href="https://www.youtube.com/channel/UC-UrTupgoq7zqjj3ffeqOEw" target="_blank">YouTube</a></p>
+            <!--<p><a>SoundCloud</a></p>-->
+            <hr class="hidden-lg hidden-md">
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h3 class="center">Central Christian Center</h3>
+            <p class="center"><a href="tel:4177815982">(417) 781-5982</a>
+              <br>
+              410 South Virginia Avenue
+              <br>
+              Joplin, MO 64801
+            </p>
+          </div>
+        </div>
+        
+        <div class="row gray pdtp-10 pdbtm-10">
+          <div class="col-lg-12 gray">
+            <p class="center">Copyright &copy; Central Christian Center 2016
+              <br>
+              This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
+                rel="dct:type">work</span> is licensed under the <a rel="license" 
+                href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons Attribution 3.0 United States 
+                License.</a>
+            </p>
+          </div>
+        </div>
+		</section>
+
+    <!-- jQuery (at least version 1.9.x and less than version 3.x) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+  </body>
+</html>

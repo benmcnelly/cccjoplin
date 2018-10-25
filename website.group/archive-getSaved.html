@@ -1,0 +1,27 @@
+		<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2 class="bdtxt">If you are ready for a personal relationship with Jesus Christ just pray the following:</h2>
+				<h4 class="bdtxt">Jesus, I am sorry for all the bad things I have done.  I want you to be in charge of my life.<br>
+					I believe that you died on the cross for my sins and God raised you from the dead. 
+					Please come into my heart and save me.
+				</h4>
+				<h3 class="bdtxt">Did you pray this prayer? Want to tell someone? Tell us!</h3>
+				<a id="talk" class="btn btn-success bdtxt" href="#">Talk to us</a>
+			</div>
+		</div>
+		<div id="form" class="well bdtxt contact-form" style="display:none;">
+			{exp:email:contact_form user_recipients="no" recipients="contactus@centralchristiancenter.org,hank@centralchristiancenter.org" charset="utf-8"}
+			<input type="hidden" id="from" name="from" size="40" maxlength="35" value="salvation@cccjoplin.com">
+			<p>
+				<label for="subject" class="bdtxt">Your Name:</label><br>
+				<input type="text" id="subject" name="subject" size="40" value=" ">
+			</p>
+			<p>
+				<label for="message" class="bdtxt">Tell us anything:</label><br>
+				<textarea id="message" name="message" rows="12" cols="70"></textarea>
+			</p>
+			<p>
+				<input name="submit" type='submit' value='Submit Form' class="btn btn-success bdtxt">
+			</p>
+			{/exp:email:contact_form}
+		</div>
