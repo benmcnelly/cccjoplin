@@ -297,6 +297,1009 @@ form {
   padding: 5px;
   min-height: 100px;
 }
+
+.cebox > p {
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
+/* ================
+  | TEXT CONTROLS |
+  ================ */
+
+/* text colors */
+.whiteText {color: white;}
+.blackText {color: black;}
+.orangeText {color: #FF3300;}
+
+/* font classes */
+.righteous {font-family: 'Righteous', cursive;}
+.lato {font-family: 'Lato', sans-serif;}
+
+/* font size adjustments */
+.fs125 {font-size: 125%;}
+.fs150 {font-size: 150%;}
+.fs175 {font-size: 175%;}
+.fs200 {font-size: 200%;}
+.fs250 {font-size: 250%;}
+.fs275 {font-size: 275%;}
+.fs300 {font-size: 300%;}
+.fs400 {font-size: 400%;}
+
+/* ===============
+  | PARALLAX CSS |
+  ================ */
+
+/* Parallax: Primary Structure */
+.pcontainer {
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Lato', sans-serif;
+}
+/* Parallax: Sections */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h1, h2, h3, h4 {
+  font-family: 'Righteous', cursive;
+}
+section.module h1.whitetext, h2.whitetext, h3.whitetext, h4.whitetext {
+  color: white;
+}
+section.module p {
+  font-family: 'Lato', sans-serif;
+}
+section.module p.whitetext {
+  color: white;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.parallax {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* Device Management */
+@media screen and (max-width: 480px) {
+  section.module.parallax {
+    height: 20em;
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .cebox > p {
+    color: white;
+    text-align: center;
+    font-size: 110%;
+  }
+  .cgbox > p {
+    color: #FF3300;
+    font-size: 110%;
+  }
+  section.module.parallax-landing {
+    height: 35em;
+  }
+  section.module.parallax h1 {
+    line-height: 200px;
+  }
+  .pcontainer {
+    max-width: 450px;
+  }
+  .lndimgspc {
+    padding-top: 7em;
+  }
+  .sermBtn {
+    height: 175px;
+  }
+  .sermBtnInner {
+    font-size: 125%;
+    padding-top: 3%;
+  }
+  .tweendiv {
+    padding-top: 2em;
+  }
+  .landingLogo {
+    width: 13em;
+  }
+  .landinglead {
+  font-size: 4em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .leadTextW {
+    font-size: 200%;
+  }
+  .hdr1TextO {
+    font-size: 175%;
+  }
+  .hdr1TextW {
+    font-size: 175%;
+  }
+  .hdr2TextW {
+    font-size: 125%;
+  }
+  .hdr2TextO {
+    font-size: 125%
+  }
+  .hdr3TextW {
+    font-size: 100%;
+  }
+  .hdr3TextO {
+    font-size: 100%;
+  }
+  .hdr4TextW {
+    font-size: 100%;
+  }
+  .hdr4TextO {
+    font-size: 100%;
+  }
+  .accTxt {
+    font-size: 100%;
+  }
+  .pageTextOrange, .pageTextWhite {
+    font-size: 125%;
+  }
+  .tweentext {
+    font-size: 250%;
+  }
+  .minBtn {
+    padding: 4%;
+  }
+  .carouselPad {
+    padding-top: 3.5em;
+  }
+  .landingbtn {
+    width: 260px;
+  }
+  section.module.parallax-landing {
+    background-image: url("http://www.cccjoplin.com/images/site/landingRender1rdx3.jpg"); /* Define landing background image */
+  }
+  section.module.parallax-1 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage1rdx3.jpg"); /* Define 1st background image */
+  }
+  section.module.parallax-2 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage2rdx3.jpg"); /* Define 2nd background image */
+  }
+  section.module.parallax-3 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage3rdx3.jpg"); /* Define 3rd background image */
+  }
+}
+@media screen and (min-width: 481px) {
+  section.module.parallax {
+    height: 25em;
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .cebox > p {
+    color: white;
+    text-align: center;
+    font-size: 120%;
+  }
+  .cgbox > p {
+    color: #FF3300;
+    font-size: 120%;
+  }
+  section.module.parallax-landing {
+    height: 35em;
+  }
+  .pcontainer {
+    max-width: 560px;
+  }
+  .lndimgspc {
+  padding-top: 7em;
+  }
+  .tweendiv {
+    padding-top: 7em;
+  }
+  .sermBtn {
+    height: 250px;
+  }
+  .sermBtnInner {
+    font-size: 125%;
+    padding-top: 3%;
+  }
+  .tweentext {
+    font-size: 550%;
+  }
+  .landingLogo {
+    width: 13em;
+  }
+  .landinglead {
+  font-size: 4em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .leadTextW {
+    font-size: 275%;
+  }
+  .hdr1TextO {
+    font-size: 225%;
+  }
+  .hdr1TextW {
+    font-size: 225%;
+  }
+  .hdr2TextW {
+    font-size: 175%;
+  }
+  .hdr2TextO {
+    font-size: 175%
+  }
+  .hdr3TextW {
+    font-size: 150%;
+  }
+  .hdr3TextO {
+    font-size: 150%;
+  }
+  .hdr4TextW {
+    font-size: 100%;
+  }
+  .hdr4TextO {
+    font-size: 100%;
+  }
+  .accTxt {
+    font-size: 150%;
+  }
+  .pageTextOrange, .pageTextWhite {
+    font-size: 125%;
+  }
+  .landingbtn {
+    width: 300px;
+  }
+  .carouselPad {
+    margin-top: 3.5em;
+  }
+  section.module.parallax-landing {
+    background-image: url("http://www.cccjoplin.com/images/site/landingRender1rdx3.jpg"); /* Define landing background image */
+  }
+  section.module.parallax-1 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage1rdx3.jpg"); /* Define 1st background image */
+  }
+  section.module.parallax-2 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage2rdx3.jpg"); /* Define 2nd background image */
+  }
+  section.module.parallax-3 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage3rdx3.jpg"); /* Define 3rd background image */
+  }
+  .minBtn {
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.module.parallax {
+    height: 27em;
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .cebox > p {
+    color: white;
+    text-align: center;
+    font-size: 125%;
+  }
+  .cgbox > p {
+    color: #FF3300;
+    font-size: 125%;
+  }
+  section.module.parallax-landing {
+    height: 40em;
+  }
+  .pcontainer {
+    max-width: 730px;
+  }
+  #topbar {
+    height: 4em;
+  }
+  #logo {
+    max-width: 5em; /* adjust this number to change the image size */
+    margin: 0px 0px 0px 75px;
+  }
+  #cccnav {
+    margin: -60px 0px 0px 0px;
+  }
+  .leadTextW {
+    font-size: 300%;
+  }
+  .sermBtn {
+    height: 250px;
+  }
+  .sermBtnInner {
+    font-size: 125%;
+    padding-top: 4%;
+  }
+  .hdr1TextO {
+    font-size: 250%;
+  }
+  .hdr1TextW {
+    font-size: 250%;
+  }
+  .hdr2TextW {
+    font-size: 200%;
+  }
+  .hdr2TextO {
+    font-size: 200%
+  }
+  .hdr3TextW {
+    font-size: 175%;
+  }
+  .hdr3TextO {
+    font-size: 175%;
+  }
+  .hdr4TextW {
+    font-size: 100%;
+  }
+  .hdr4TextO {
+    font-size: 100%;
+  }
+  .accTxt {
+    font-size: 175%;
+  }
+  .pageTextOrange, .pageTextWhite {
+    font-size: 150%;
+  }
+  .lndimgspc {
+  padding-top: 5em; 
+  }
+  .tweendiv {
+    padding-top: 5em;
+  }
+  .tweentext {
+    font-size: 700%;
+  }
+  .landingLogo {
+    width: 22em;
+  } 
+  .landinglead {
+  font-size: 6em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .minBtn {
+    padding: 1%;
+  }
+  .carouselPad {
+    margin-top: 3.5em;
+  }
+  landingbtn {
+    width: 320px;
+  }
+  section.module.parallax-landing {
+    background-image: url("http://www.cccjoplin.com/images/site/landingRender1rdx2.jpg"); /* Define landing background image */
+  }
+  section.module.parallax-1 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage1rdx2.jpg"); /* Define 1st background image */
+  }
+  section.module.parallax-2 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage2rdx2.jpg"); /* Define 2nd background image */
+  }
+  section.module.parallax-3 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage3rdx2.jpg"); /* Define 3rd background image */
+  }
+}
+@media screen and (min-width: 992px) {
+  section.module.parallax {
+    height: 30em;
+    background-attachment: unset;
+    background-position: center top;
+  }
+  .cebox > p {
+    color: white;
+    text-align: center;
+    font-size: 135%;
+  }
+  .cgbox > p {
+    color: #FF3300;
+    font-size: 135%;
+  }
+  section.module.parallax-landing {
+    height: 50em;
+  }
+  .pcontainer {
+    max-width: 960px;
+  }
+  #topbar {
+    height: 4em;
+  }  
+  #logo {
+    max-width: 6em; /* adjust this number to change the image size */
+    margin: 0px 0px 0px 95px;
+  }
+  #cccnav {
+    margin: -75px 0px 0px 0px;
+  }
+  .leadTextW {
+    font-size: 300%;
+  }
+  .hdr1TextO {
+    font-size: 250%;
+  }
+  .hdr1TextW {
+    font-size: 250%;
+  }
+  .hdr2TextW {
+    font-size: 200%;
+  }
+  .hdr2TextO {
+    font-size: 200%
+  }
+  .hdr3TextW {
+    font-size: 175%;
+  }
+  .hdr3TextO {
+    font-size: 175%;
+  }
+  .hdr4TextW {
+    font-size: 100%;
+  }
+  .hdr4TextO {
+    font-size: 100%;
+  }
+  .accTxt {
+    font-size: 175%;
+  }
+  .lndimgspc {
+  padding-top: 10em; 
+  }
+  .tweendiv {
+    padding-top: 10em;
+  }
+  .tweentext {
+    font-size: 750%;
+  }
+  .landingLogo {
+    width: 30em;
+  }
+  .pageTextOrange, .pageTextWhite {
+    font-size: 150%;
+  }
+  .landinglead {
+  font-size: 8em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .4em;
+  }
+  .minBtn {
+    padding: 1%;
+  }
+  .carouselPad {
+    margin-top: 3em;
+  }
+  .landingbtn {
+    width: 300px;
+  }
+  section.module.parallax-landing {
+    background-image: url("http://www.cccjoplin.com/images/site/landingRender1rdx1.jpg"); /* Define landing background image */
+  }
+  section.module.parallax-1 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage1rdx1.jpg"); /* Define 1st background image */
+  }
+  section.module.parallax-2 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage2rdx1.jpg"); /* Define 2nd background image */
+  }
+  section.module.parallax-3 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage3rdx1.jpg"); /* Define 3rd background image */
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.module.parallax {
+    height: 40em;
+    background-attachment: fixed;
+  }
+  .cebox > p {
+    color: white;
+    text-align: center;
+    font-size: 165%;
+  }
+  .cgbox > p {
+    color: #FF3300;
+    font-size: 165%;
+  }
+  section.module.parallax-landing {
+    height: 60em;
+  }
+  .pcontainer {
+    max-width: 1170px;
+  }
+  #topbar {
+    height: 4em;
+  }
+  #logo {
+    max-width: 7em; /* adjust this number to change the image size */
+    margin: 0px 0px 0px 115px;
+  }
+  #cccnav {
+    margin: -90px 0px 0px 0px;
+  }
+  .lndimgspc {
+  padding-top: 10em;
+  }
+  .sermBtn {
+    height: 300px;
+  }
+  .sermBtnInner {
+    font-size: 150%;
+    padding-top: 6%;
+  }
+  .tweendiv {
+    padding-top: 15em;
+  }
+  .tweentext {
+    font-size: 1000%;
+  }
+  .landingLogo {
+    width: 40em;
+  }
+  .landinglead {
+  font-size: 10em;
+  text-shadow: 0px 0px 5px #333;
+  margin-bottom: .8em;
+  }
+  .leadTextW {
+    font-size: 400%;
+  }
+  .hdr1TextO {
+    font-size: 300%;
+  }
+  .hdr1TextW {
+    font-size: 300%;
+  }
+  .hdr2TextW {
+    font-size: 250%;
+  }
+  .hdr2TextO {
+    font-size: 250%
+  }
+  .hdr3TextW {
+    font-size: 200%;
+  }
+  .hdr3TextO {
+    font-size: 200%;
+  }
+  .hdr4TextW {
+    font-size: 100%;
+  }
+  .hdr4TextO {
+    font-size: 100%;
+  }
+  .accTxt {
+    font-size: 200%;
+  }
+  .pageTextOrange, .pageTextWhite {
+    font-size: 175%;
+  }
+  .minBtn {
+    padding: 1%;
+  }
+  .carouselPad {
+    margin-top: 2em;
+  }
+  .landingbtn {
+    width: 360px;
+  }
+  section.module.parallax-landing {
+    background-image: url("http://www.cccjoplin.com/images/site/landingRender1.jpg"); /* Define landing background image */
+  }
+  section.module.parallax-1 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage1.jpg"); /* Define 1st background image */
+  }
+  section.module.parallax-2 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage2.jpg"); /* Define 2nd background image */
+  }
+  section.module.parallax-3 {
+    background-image: url("http://www.cccjoplin.com/images/site/backImage3.jpg"); /* Define 3rd background image */
+  }
+}
+
+/* =======================
+   | Bootstrap Overrides |
+   ======================= */
+
+/* Set Carousel images to full page width */
+.carousel img {
+    min-width: 100%;
+    height: auto;
+}
+
+/* change the highlight color of navbar elements to site theme */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #FF5C33;
+}
+
+/* change the color of the bars on the nav button */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+/* change the border colors of navbar */
+.navbar-default .navbar-toggle {
+  border-color: #333;
+}
+
+/* change navbar color, apply styles to match site CSS */
+.navbar-default {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 5px #a6a6a6;
+}
+
+/* change the brand text to match site */
+.navbar-default .navbar-brand {
+  font-family: 'Righteous', cursive;
+  color: #333;
+}
+
+/* change the brand text highlight color to match site */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FF5C33;
+  background-color: transparent;
+}
+
+/* change nav text color and type to match site*/
+.navbar-default .navbar-nav > li > a {
+  font-family: font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+/* change nav text highlight color to match site */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FF5C33;
+  background-color: transparent;
+}
+
+/* change the default link visual appearance to match site */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* change the default link visual behavior to match site */
+a:hover,
+a:focus {
+  color: #FF5C33;
+  text-decoration: none;
+}
+
+/* Remove pad on Bootstrap row element to make things on page line up correctly. */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/* add flex to keep columns lined up correctly */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  color: none;
+}
+.row > [class*-'col-'] {
+  display: flex;
+  flex-direction: .column;
+}
+
+/* Remove extra padding on buttons */
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    padding: 0;
+}
+
+/* Update clearfix */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Because iOS Safari is the absolute worst */
+.row:before, .row:after {
+  display: none;
+}
+/* ===============
+  | Experimental |
+  ================ *//* This file contains all custom CSS for the site,
+   in addition to overrides for the CSS provided by
+   Bootstrap. */
+
+   
+/* ===================
+   | Custom Site CSS |
+   =================== */
+
+/* global HTML variables */
+/* Note: these will override Bootstrap defaults */   
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+fieldset {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: inherit;
+  margin: 0px;
+}
+legend {
+  font-family: inherit;
+  font-size: 125%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 0px;
+  width: auto;
+}
+form {
+  padding-bottom: 10px;
+}
+
+/* *** */
+
+/* custom navigation bar */
+#topbar {
+  z-index: 5; /* bring the top bar forward, only works w/positioned elements */
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 10px #a6a6a6;
+  position: fixed;
+  top: 0;
+}
+/* logo controls for navigation bar */
+#logo {
+  width: auto;
+  height: auto;
+  box-shadow: 0px 0px 10px #737373;
+  border-radius: 0px 0px 10px 10px;
+}
+/* text and font controls for custom nav bar */
+#cccnav {
+  font-family: 'Righteous', cursive;
+  text-align: right;
+  font-size: 200%;
+  padding-top: -20px;
+}
+/* set styles for the children of the custom nav bar */
+#cccnav > ul {
+  list-style-type: none;
+  padding: 0px 50px px 0px;
+  overflow: hidden;
+  background-color: none;
+  position: fixed;
+  width: 100%;
+  margin-top: -5px;
+}
+/* set styles for the grandchildren of the nav bar */
+#cccnav > ul > li {
+  display: inline;
+}
+/* set styles for the great-grandchildren of the nav bar */
+#cccnav > ul > li > a {
+  display: inline;
+  color: #333;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+/* set styles for the :hover pseudo-class of the great-grandchildren of the nav bar */
+#cccnav > ul > li > a:hover {
+  color: #FF5C33;
+}
+
+/* *** */
+
+
+.lndimgspc {text-align: center;} 
+/* This class has additional device-specific settings. */
+.tweendiv {
+  text-align: center;
+  color: white;
+} /* This class has additional device-specific settings. */
+
+.tweentext {
+  text-shadow: 0px 0px 5px #FF3300, 2px 2px 15px black;
+} /* This class has additional device-specific settings. */
+.tweentext:before {
+  display: block;
+  content: " ";
+  height: 50px;
+  margin: -50px 0 0;
+} /* fixes page anchoring spacing for nav bar */
+.tweentext:after {
+  height: auto;
+  margin: 0px;
+}
+
+.landinglead {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: white;
+}
+
+.landingbtn {
+  display: inline-block;
+  border: 3px solid white;
+  height: auto;
+  padding: 5px;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px #FF3300, 2px 2px 15px black;
+  background-color: black;
+  background-color: rgb(0, 0, 0, .8);
+  margin: 5px;
+}
+
+.landingbtn:hover {
+  background-color: white;
+  color: #FF3300;
+  text-shadow: none;
+}
+
+.fitImg {
+	width: 100%;
+	height: auto;
+}
+
+.boxShadow {
+  box-shadow: 0px 0px 10px black;
+}
+
+.center {text-align: center;}
+.cent-el {
+  margin: 0 auto 0 auto;
+}
+
+.minBtn {
+  min-height: 50px;
+  min-width: 25%;
+  border: 1px solid #FF3300;
+  text-align: center;
+  color: #FF3300;
+  padding: 1%;
+  font-size: 200%;
+}
+.minBtn:hover {
+  background: #FF3300;
+  border: 1px solid white;
+  color: white;
+}
+.minBtn > a, .minBtn > h4 > a {
+  color: inherit;
+}
+.minDesc, .cellDesc {
+  padding: 10px 5px 10px 5px;
+  color: #FF3300;
+  font-size: 175%;
+}
+
+/* Unified text controls for easier management */
+.pageTextOrange {
+  padding: 5px;
+  color: #FF3300;
+  font-size: 175%;
+}
+.pageTextWhite {
+  padding: 5px;
+  color: white;
+  font-size: 175%;
+}
+.leadTextW {
+  color: white;
+  font-size: 400%;
+}
+.hdr1TextO {
+  color: #FF3300;
+  font-size: 300%;
+}
+.hdr1TextW {
+  color: white;
+  font-size: 300%;
+}
+.hdr2TextW {
+  color: white;
+  font-size: 250%;
+}
+.hdr2TextO {
+  color: #FF3300;
+  font-size: 250%
+}
+.hdr3TextW {
+  color: white;
+  font-size: 200%;
+}
+.hdr3TextO {
+  color: #FF3300;
+  font-size: 200%;
+}
+.hdr4TextW {
+  color: white;
+  font-size: 100%;
+}
+.hdr4TextO {
+  color: #FF3300;
+  font-size: 100%;
+}
+.accTxt {
+  font-size: 200%;
+}
+
+
+.sermBtn {
+  height: 300px;
+  min-width: 25%;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  background: #FF3300;
+  display: block;
+}
+.sermBtnInner {
+  border: 1px solid white;
+  width: 85%;
+  height: 33%;
+  display: block;
+  text-align: center;
+  color: inherit;
+  background: inherit;
+  margin: 5px auto 0 auto;
+  padding-top: 6%;
+  font-family: righteous;
+  font-size: 150%;
+}
+.sermBtnInner:hover {
+  background: white;
+  border: 1px solid #FF3300;
+  color: #FF3300;
+}
+
+.landingLogo {height: auto;}
+/* This class has additional device-specific settings. */
+
+/* padding classes */
+.pdtp-10 {padding-top: 10px;}
+.pdbm-10 {padding-bottom: 10px;}
+.pdbm-20 {padding-bottom: 20px;}
+.pdbm-30 {padding-bottom: 30px;}
+.pad-5 {padding: 5p;}
+
+/* margin classes */
+.mar-5 {margin: 5px;}
+.mart10 {margin-top: 10px;}
+.mar0 {margin: 0px;}
+
+/* background colors */
+.black {background: black;}
+.green {background: green;}
+.red {background: red;}
+.blue {background: blue;}
+.orange {background: #FF3300;}
+.white {background: white;}
+.gray {background: #c8c8c8;}
+
+/* width classes */
+.wTwenty {
+  width: 20%;
+}
+/* cell group box */
+.cgbox {
+  border: 1px solid #FF3300;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  min-height: 320px;
+}
+/* current event box */
+.cebox {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  min-height: 100px;
+}
 /* ================
   | TEXT CONTROLS |
   ================ */

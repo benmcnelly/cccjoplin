@@ -8,7 +8,7 @@
     <meta name="description" content="Central Christian Center is committed to tell everyone about Jesus Christ and His great love for them. It's our desire to bring people into God's family and help them develop a Christ-like maturity as well as equipping them for ministry.">
     <meta name="author" content="Central Christian Center">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="img_src" href="http://cccjoplin.com/images/site/ccc-soc-med-1.jpg">
+    {!-- <link rel="img_src" href="http://cccjoplin.com/images/site/ccc-soc-med-1.jpg"> invalid HTML5 rel value --}
     
     <meta property="og:title" content="Central Christian Center">
     <meta property="og:type" content="website">
@@ -110,19 +110,19 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+            <button type="button" class="btn btn-link" data-dismiss="modal"><b>Close</b></button>
           </div>
         </div>{!-- /.modal-content --}
       </div>{!-- /.modal-dialog --}
     </div>{!-- /.modal --}
     
-    {!-- Feature Not Available Modal --}
-    <div class="modal fade" id="notYet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    {!-- Feature Not Available Modal
+    <div class="modal fade" id="notYet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title" id="myModalLabel">This Feature Isn't Ready Yet</h3>
+            <h3 class="modal-title" id="myModalLabel2">This Feature Isn't Ready Yet</h3>
           </div>
           <div class="modal-body">
             <p>We're working to bring all planned pages, features, bells, whistles, kazoos, cats, tubes, loldogs, and the like
@@ -130,11 +130,11 @@
               all eventually fall into line, but until then, please explore the other features of our site. God Bless.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+            <button type="button" class="btn btn-link" data-dismiss="modal"><b>Close</b></button>
           </div>
         </div>
       </div>
-    </div>
+    </div>--}
     
     {!-- Pretty Header --}
     <div id="topbar" class="hidden-xs">
@@ -235,8 +235,8 @@
             {exp:channel:entries  channel="current_events" orderby="expiration_date" sort="asc"}
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="cebox">
-                  <h3 class="hdr2TextW center">{title}</h2>
-                  <h4 class="pageTextWhite center">{short_description}</h4>
+                  <h3 class="hdr2TextW center">{title}</h3>
+                  {short_description}
                 </div>  
               </div>
             {/exp:channel:entries}
@@ -583,7 +583,7 @@
                           <h2 class="hdr1TextO center">{cell_group_name}</h2>
                           <h3 class="hdr3TextO center">{cell_meeting_day} at {cell_meeting_time}</h3>
                           <h4 class="hdr4TextO center">{cell_phone}</h4>
-                          <h4 class="pageTextOrange">{cell_desc}</h4>
+                          {cell_desc}
                         </div>  
                       {/exp:channel:entries}
                     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <meta name="description" content="Central Christian Center is committed to tell everyone about Jesus Christ and His great love for them. It's our desire to bring people into God's family and help them develop a Christ-like maturity as well as equipping them for ministry.">
     <meta name="author" content="Central Christian Center">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="img_src" href="http://cccjoplin.com/images/site/ccc-soc-med-1.jpg">
+    {!-- <link rel="img_src" href="http://cccjoplin.com/images/site/ccc-soc-med-1.jpg"> invalid HTML5 rel value --}
     
     <meta property="og:title" content="Central Christian Center">
     <meta property="og:type" content="website">
@@ -20,7 +20,7 @@
     <title>Central Christian Center</title>
     <link href="{path='website/bootstrap'}" rel="stylesheet">{!-- Bootstrap Core CSS --}
     <link href="{path='website/cccjoplincssdev'}" rel="stylesheet">{!-- Custom CSS --}
-    <link href='https://fonts.googleapis.com/css?family=Righteous|Lato' rel='stylesheet' type='text/css'>{!-- Custom Fonts --}
+    <link href='https://fonts.googleapis.com/css?family=Righteous%7CLato' rel='stylesheet' type='text/css'>{!-- Custom Fonts --}
     
 		{!-- Shortcut Icons --}
 		<link rel="apple-touch-icon" sizes="180x180" href="http://cccjoplin.com/images/site/apple-touch-icon-180-precomposed.png">
@@ -82,7 +82,7 @@
                   <option value="Special">Special</option>
                 </select><br style="clear: left">
               <label class="wTwenty">Notes</label>
-              <input maxlength="200" name="on1" type="hidden" value="Notes">
+              <input name="on1" type="hidden" value="Notes">
               <input name="os1" type="text"><br style="clear: left">
               <button class="btn btn-success pull-right" name="submit"><b>Submit via PayPal</b></button>
               </fieldset>
@@ -95,34 +95,34 @@
                   <b>Give Using ShelbyNext</b>
                 </legend>
                 <p>Use the ShelbyNext Web Portal:
-                <a href="https://www.shelbygiving.com/dl/?uid=cent410224" target="_blank" alt="ShelbyNext payment" 
+                <a href="https://www.shelbygiving.com/dl/?uid=cent410224" target="_blank" 
                   title="This will take you to ShelbyNext in a new tab." role="button"
                   class="btn btn-success pull-right"><b>Pay Using ShelbyNext</b></a></p>
                 <p>Prefer to use the app? You can find it on <a
                   href="https://play.google.com/store/apps/details?id=com.ministrybrands.shelbynext&hl=en" target="_blank" style="color: blue;"
-                  alt="ShelbyNext Android App" title="This will open a link to the ShelbyNext Android App in a new tab or appropriate application.">
+                  title="This will open a link to the ShelbyNext Android App in a new tab or appropriate application.">
                   Google Play</a> or the <a href="https://itunes.apple.com/us/app/shelbynext-membership/id996581065?mt=8" style="color: blue;"
-                  target="_blank" alt="ShelbyNext Apple App Store App" title="This will open a link to the ShelbyNext Apple App in a new tab or appropriate application.">
+                  target="_blank" title="This will open a link to the ShelbyNext Apple App in a new tab or appropriate application.">
                   Apple App Store</a>.</p>
                 <p>You can also give via text message:
-                <a href="tel:4177377271" alt="text the amount you wish to give to 4177377271" role="button" class="btn btn-success pull-right"><b>Text 4177377271</b></a></p>
+                <a href="tel:4177377271" title="Text the amount you wish to give to 4177377271" role="button" class="btn btn-success pull-right"><b>Text 4177377271</b></a></p>
               </fieldset>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+            <button type="button" class="btn btn-link" data-dismiss="modal"><b>Close</b></button>
           </div>
         </div>{!-- /.modal-content --}
       </div>{!-- /.modal-dialog --}
     </div>{!-- /.modal --}
     
-    {!-- Feature Not Available Modal --}
-    <div class="modal fade" id="notYet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    {!-- Feature Not Available Modal
+    <div class="modal fade" id="notYet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title" id="myModalLabel">This Feature Isn't Ready Yet</h3>
+            <h3 class="modal-title" id="myModalLabel2">This Feature Isn't Ready Yet</h3>
           </div>
           <div class="modal-body">
             <p>We're working to bring all planned pages, features, bells, whistles, kazoos, cats, tubes, loldogs, and the like
@@ -130,15 +130,15 @@
               all eventually fall into line, but until then, please explore the other features of our site. God Bless.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-link" data-dismiss="modal"><h4>Close</h4></button>
+            <button type="button" class="btn btn-link" data-dismiss="modal"><b>Close</b></button>
           </div>
         </div>
       </div>
-    </div>
+    </div>--}
     
     {!-- Pretty Header --}
     <div id="topbar" class="hidden-xs">
-      <a href="http://www.cccjoplin.com"><img id="logo" src="images/site/header_logo.jpg"></a>
+      <a href="http://www.cccjoplin.com"><img id="logo" src="images/site/header_logo.jpg" alt=""></a>
       <div id="cccnav">
         {!-- Navigation --}
         <ul>
@@ -163,7 +163,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://www.cccjoplin.com"><img src="images/site/header_logo.jpg" style="max-width: 45px; margin-top: -15px;"></a>
+          <a class="navbar-brand" href="http://www.cccjoplin.com"><img src="images/site/header_logo.jpg" style="max-width: 45px; margin-top: -15px;" alt=""></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -181,18 +181,18 @@
 		
     <section class="module parallax parallax-landing">{!-- Parallax Landing Image --}
       <div id="top" class="lndimgspc">
-        <img src="http://www.cccjoplin.com/images/site/Logo-no-text.png" class="landingLogo">
+        <img src="http://www.cccjoplin.com/images/site/Logo-no-text.png" class="landingLogo" alt="">
       </div>
       <div class="row">
         <div class="container mart10">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 center">
             {exp:channel:entries channel="sermon" limit="1"}
-              <a class="landingbtn" href="{youtube_link}" alt="View Our Latest Sermon on Youtube" target="_blank"><h3 class="mar0">View Latest Sermon</h3></a>
+              <a class="landingbtn" href="{youtube_link}" title="View Our Latest Sermon on Youtube" target="_blank"><h3 class="mar0">View Latest Sermon</h3></a>
 				    {/exp:channel:entries} 
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 center">
             {exp:channel:entries channel="sermon" limit="1"}
-              <a class="landingbtn" href="{audio_url}" alt="View Our Latest Sermon on Youtube" target="_blank" download><h3 class="mar0">Listen to Latest Sermon</h3></a>
+              <a class="landingbtn" href="{audio_url}" title="View Our Latest Sermon on Youtube" target="_blank" download><h3 class="mar0">Listen to Latest Sermon</h3></a>
 				    {/exp:channel:entries} 
           </div>
           <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 center">
@@ -235,8 +235,8 @@
             {exp:channel:entries  channel="current_events" orderby="expiration_date" sort="asc"}
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="cebox">
-                  <h3 class="hdr2TextW center">{title}</h2>
-                  <h4 class="pageTextWhite center">{short_description}</h4>
+                  <h3 class="hdr2TextW center">{title}</h3>
+                  {short_description}
                 </div>  
               </div>
             {/exp:channel:entries}
@@ -286,7 +286,7 @@
                         At the end of 2013, the Holy Spirit stirred the hearts of the women of Central Christian Center to unite the five women's groups. They aligned their hearts and vision, to create one group that encompasses all women. On a foundation of prayer and united, Woven was born! Colossians 2:2 says, <em>“I want them to be encouraged and knit (WOVEN) together by strong ties of love. I want them to have complete confidence that they understand God’s mysterious plan, which is Christ himself.”</em> We want YOU to be encouraged and WOVEN WITH US and TOGETHER we will come to understand GOD’s plan. So please join with us and other women of faith and let’s weave a great tapestry of love for our church and community. 
                       </p>
                       <div class="center hidden-xs">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSZtfuFGnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4uSZtfuFGnc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                       </div>
                     </div>
                 </div>
@@ -577,13 +577,13 @@
                         <div class="cgbox">
                           <a href="{comment_url_title_auto_path}">
                           {if cell_group_photo}{!--{exp:imgsizer:size image="{cell_group_photo}" width="auto" height="300"
-                            }--}<img src="http://new.cccjoplin.com/images/lgph.jpg" width="auto" height="265" class="{switch='pull-left|pull-right'} mar-5">
-                          {if:else}<img src="http://new.cccjoplin.com/images/lgph.jpg" width="auto" height="265" class="{switch='pull-left|pull-right'} mar-5">
+                            }--}<img src="http://new.cccjoplin.com/images/lgph.jpg" style="width: auto" height="265" class="{switch='pull-left|pull-right'} mar-5" alt="">
+                          {if:else}<img src="http://new.cccjoplin.com/images/lgph.jpg" style="width: auto" height="265" class="{switch='pull-left|pull-right'} mar-5" alt="">
                           {/if}</a>
                           <h2 class="hdr1TextO center">{cell_group_name}</h2>
                           <h3 class="hdr3TextO center">{cell_meeting_day} at {cell_meeting_time}</h3>
                           <h4 class="hdr4TextO center">{cell_phone}</h4>
-                          <h4 class="pageTextOrange">{cell_desc}</h4>
+                          {cell_desc}
                         </div>  
                       {/exp:channel:entries}
                     </div>
@@ -618,8 +618,8 @@
           <h3 class="hdr3TextW">
             {title}
           </h3>
-          <a class="sermBtnInner" href="{youtube_link}" target="_blank" alt="View {title} on YouTube.">Video</a>
-          <a class="sermBtnInner" href="{audio_url}" alt="Download the audio for {title}" download>Audio</a>
+          <a class="sermBtnInner" href="{youtube_link}" target="_blank" title="View {title} on YouTube.">Video</a>
+          <a class="sermBtnInner" href="{audio_url}" title="Download the audio for {title}" download>Audio</a>
         </div>
         {/exp:channel:entries}
       </div>
@@ -629,8 +629,8 @@
           <h3 class="hdr2TextW">
             {title}
           </h3>
-          <a class="sermBtnInner" href="{youtube_link}" target="_blank" alt="View {title} on YouTube."><span class="accTxt">Video</span></a>
-          <a class="sermBtnInner" href="{audio_url}" alt="Download the audio for {title}" download><span class="accTxt">Audio</span></a>
+          <a class="sermBtnInner" href="{youtube_link}" target="_blank" title="View {title} on YouTube."><span class="accTxt">Video</span></a>
+          <a class="sermBtnInner" href="{audio_url}" title="Download the audio for {title}" download><span class="accTxt">Audio</span></a>
         </div>
         {/exp:channel:entries}
       </div>
@@ -668,10 +668,9 @@
         
         <div class="row gray pdtp-10 pdbtm-10">
           <div class="col-lg-12 gray cent-el">
-            <p class="center">Copyright &copy; Central Christian Center 2018
+            <p class="center">Copyright &copy; Central Christian Center 2018-2019
               <br>
-              This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
-                rel="dct:type">work</span> is licensed under the <a rel="license" 
+              This site is licensed under the <a rel="license" 
                 href="http://creativecommons.org/licenses/by/3.0/us/"> Creative Commons Attribution 3.0 United States 
                 License.</a>
             </p>
@@ -686,6 +685,6 @@
     <script src="js/bootstrap.min.js"></script>
 
     {!-- Custom Theme JavaScript --}
-    <script src="{path='website/cccjoplinjs'}" type="text/javascript"></script>
+    <script src="{path='website/cccjoplinjs'}"></script>
   </body>
 </html>
