@@ -2,6 +2,16 @@
 <html lang="en-us">
 
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130284719-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130284719-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +29,7 @@
 
     <title>Central Christian Center</title>
     <link href="{path='website/bootstrap'}" rel="stylesheet">{!-- Bootstrap Core CSS --}
-    <link href="{path='website/cccjoplincssdev'}" rel="stylesheet">{!-- Custom CSS --}
+    <link href="{path='website/cccjoplincss'}" rel="stylesheet">{!-- Custom CSS --}
     <link href='https://fonts.googleapis.com/css?family=Righteous%7CLato' rel='stylesheet' type='text/css'>{!-- Custom Fonts --}
     
 		{!-- Shortcut Icons --}
@@ -427,7 +437,33 @@
                     </div>
                 </div>
             </div>
+            {!-- ROYAL RANGERS --}
+            <div class="panel panel-default">
+                <div class="minBtn" role="tab" id="headingSix">
+                    <h4 class="panel-title center">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            <span class="accTxt">Royal Rangers</span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                      <p class="pageTextOrange">
+                        Royal Rangers is a mentoring program for future men. We provide Christ-like character formation and servant leadership development for boys an young men in a highly relational and fun environment. Our mission is to evangelize, equip, and empower the next generation of Christ-like men and lifelong servant leaders.
+                        <br><br>
+                        The Royal Rangers motto is <strong>Ready</strong>: Ready for anything! Ready to work, play, serve, worship, live, and obey God's word.
+                        <br><br>
+                        The Royal Rangers meet up the stairs by the gym on Sundays from 4pm to 7:30pm. Come in the alley door, go up the stairs, and go to the first classroom at the top of the stairs (the old 3yr classroom.) Adventure and Expedition, which is comprised of the 6th-12th grade boys, meets at 4pm, then Ranger Kids and Discovery Rangers, which is comprised of K-5th grade boys, meets at 6pm.
+                        <br><br>
+                        There is no cost to join, and while not required, the boys are encouraged to purchase the handbook and uniform.
+                        <br><br>
+                        Central Christian Center is a registered as Chapter 139 of the Royal Rangers. To find out more, contact G Dyer at <a href="tel:4172914977">417-291-4977</a>. You can also learn more at <a href="https://tracclub.org" title="TRaCclub - National Royal Rangers" target="_blank">TRaCclub.org</a> and <a href="https://royalrangers.com" title="Royal Rangers USA" target="_blank">Royal Rangers USA</a>. 
+                      </p>
 
+                    </div>
+                </div>
+            </div>
           </div>{!-- panel-group --}
         </div>
       </div>
@@ -442,7 +478,7 @@
     <section id="cell" class="module content">{!-- Parallax Content Section 3 --}
       <div class="row">
         <div class="col-xs-12">
-          <p class="pageTextOrange"><strong>Group Ministries:</strong>
+          <p class="pageTextOrange"><strong>Life Groups</strong>
             <br>
             <em>a place where people can come together to connect 
             with others.</em>
@@ -657,11 +693,11 @@
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 cent-el">
             <h3 class="center">Central Christian Center</h3>
-            <p class="center"><a href="tel:4177815982">(417) 781-5982</a>
+            <p class="center"><a href="tel:4177815982" title="Give us a call.">(417) 781-5982</a>
               <br>
-              410 South Virginia Avenue
+              <a href="https://goo.gl/maps/DcJKY8bpsD52" title="Looking for directions?" target="_blank">410 South Virginia Avenue
               <br>
-              Joplin, MO 64801
+              Joplin, MO 64801</a>
             </p>
           </div>
         </div>
@@ -684,7 +720,7 @@
     {!-- Bootstrap Core JavaScript --}
     <script src="js/bootstrap.min.js"></script>
 
-    {!-- Custom Theme JavaScript --}
-    <script src="{path='website/cccjoplinjs'}"></script>
+    {!-- Custom Theme JavaScript
+    <script src="{path='website/cccjoplinjs'}"></script> --}
   </body>
 </html>
