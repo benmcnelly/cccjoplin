@@ -49,9 +49,98 @@
     <![endif]-->
   </head>
   <body>
-    
+    <nav>
+      {!-- Navigation menu --}
+      <section id="navInteract">
+          <a href="http://www.cccjoplin.com"><img id="logo" src="images/site/header_logo.jpg" alt=""></a>
+      </section>
+      <ul id="navMenu">
+        <li id="top" class="nav"><a href="#top">Top</a></li>
+        <li id="leadLink" class="nav"><a href="#leadContent">Welcome</a></li>
+        <li id="minLink" class="nav"><a href="#ministryLead">Ministries</a></li>
+        <li id="aboutLink" class="nav"><a href="#aboutLead">About Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="landingImg">
+          <img src="http://www.cccjoplin.com/images/site/Logo-no-text.png" alt="">
+      </section>
+
+      <section id="leadContent">
+        {!-- Page Lead --}
+        <h1>Welcome to Central Christian Center!</h1>
+        <noscript id="PleaseEnableJavaScript">
+          <h2>Greetings</h2>
+          <p>Central Christian Center respects your privacy and right to control what information gets collected about you on the internet. This site uses JavaScript to load page content without having to reload the page, as well as for adjusting page scrolls, animations, and other automation features. While pass-through pages are an eventual development target, they are not a priority as our dev team is small and their time has to be prioritized.
+          </p>
+          <p>We also use Google Analytics in order to better optimize the site for frequent visitors. We have elected to forego demographics collection as well as several other features because of the potential abuses that might occur by Google, instead opting for browser and source statistics to guide
+          our development efforts.            
+          </p>
+          <p>Please enable JavaScript for the best experience on the site. Thank you, and God Bless You.
+          </p>
+        </noscript>
+        
+        {!-- Web App Features --}
+        <section id="webAppLaunchButtons">
+          <button id="videoMinBtn">Videos</button>
+          <button id="audioBtn">Audio</button>
+          <button id="givingBtn">Giving</button>
+          <button id="curEvtBtn">Current Events</button>
+        </section>
+
+        <section id="appContentTarget"></section>
+        
+        {!-- Faith Statement & Message from the Pastor --}
+        <article id="faithStatement">
+          <h2>In the Heart of Joplin, With a Heart for Joplin</h2>
+          {exp:channel:entries channel="welcome_message"}
+          <p>{welcome_content}</p>
+          {/exp:channel:entries}
+        </article>
+        <article id="pasterMOTD">
+          <h2>The Thought For the Day</h2>
+          {exp:channel:entries channel="p_motd" limit="1"}
+          <p>{motd_content}</p>
+          {/exp:channel:entries}
+        </article>
+      </section>
+
+      <section id="ministryImg">
+        <h2 id="ministryLead">Outreach Ministries</h2>
+      </section>
+
+      <section id="ministryContent">
+        <section id="ministryLaunchButtons">
+          
+        </section>
+
+        {!-- Life Groups--}
+        {!-- Woven --}
+        {!-- Royal Rangers --}
+        {!-- Saturday Night Live --}
+        {!-- Bright Futures --}
+        {!-- Food Pantry --}
+      </section>
+
+      <section id="aboutImg">
+        <h2 id="aboutLead">About Us</h2>
+      </section>
+
+      <section id="aboutContent">
+        {!-- Church --}
+        {!-- Location --}
+      </section>
+    </main>
+
+    <footer>
+      {!-- Development --}
+      {!-- Licensing --}
+    </footer>
+
     {!-- link this later: https://github.com/benmcnelly/cccjoplin --}
     {!-- JavaScript --}
+    {!-- using jQuery for now - would like to move to vanilla JS as soon as possible --}
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="

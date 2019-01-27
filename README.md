@@ -31,41 +31,49 @@ Layout within webserver (without disclosing complete server paths):
 ## Images
 	/images/site
 
-### App with four functions:
+### App with three sections:
 
-[landing section with general intro and pastor's motd]
+- lead content
+  * greeting (page lead)
+  * web app features
+    - video content
+    - audio content
+    - online giving
+    - current event organization
+  * greeting (text, maybe video?)
 
-- media availability
-  * video content
-  * audio content
-- online giving
-- current event organization
+- ministries
+  * Life Groups
+  	- about life groups
+  	- life group listing
+  * Woven
+  	- about
+  	- social media
+  * Royal Rangers
+  	- about
+  	- social media
+  * Saturday Night Live
+  	- about
+  	- social media
+  * Bright Futures
+  	- about
+  	- social media
+  * Food Pantry
+
 - about
-	* ministries
-		- Life Groups
-			* about life groups
-			* life group listing
-		- Woven
-			* about
-			* social media
-		- Saturday Night Live
-			* about
-			* social media
-		- Royal Rangers
-			* about
-			* social media
-		- Bright Futures
-			* about
-			* social media
-		- Food Pantry
 	* church
 		- beliefs
 		- history
 		- staff
-	* location
-		- address
-		- phone number
-		- directions
-		- social media
-		- service times
 		- about the building
+	* location
+		- contact
+  		* address
+  		* phone number
+  		* directions
+  		* social media
+  		* service times
+
+- footer  		
+	* development
+  * licensing
